@@ -43,5 +43,10 @@ namespace PrimerProjecte_PeraltaSandovalEric
 
             f.Show();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

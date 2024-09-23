@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dadesMestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peticióModulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.peticióModulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +60,14 @@
             this.dadesMestresToolStripMenuItem.Text = "Dades Mestres";
             this.dadesMestresToolStripMenuItem.Click += new System.EventHandler(this.dadesMestresToolStripMenuItem_Click);
             // 
+            // peticióModulToolStripMenuItem
+            // 
+            this.peticióModulToolStripMenuItem.Name = "peticióModulToolStripMenuItem";
+            this.peticióModulToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.peticióModulToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.peticióModulToolStripMenuItem.Text = "Petició Modul";
+            this.peticióModulToolStripMenuItem.Click += new System.EventHandler(this.peticióModulToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -72,19 +82,23 @@
             this.sortirToolStripMenuItem.Text = "Sortir ";
             this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click_1);
             // 
-            // peticióModulToolStripMenuItem
+            // checkBox1
             // 
-            this.peticióModulToolStripMenuItem.Name = "peticióModulToolStripMenuItem";
-            this.peticióModulToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.peticióModulToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.peticióModulToolStripMenuItem.Text = "Petició Modul";
-            this.peticióModulToolStripMenuItem.Click += new System.EventHandler(this.peticióModulToolStripMenuItem_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(365, 202);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -104,6 +118,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sortirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem peticióModulToolStripMenuItem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
